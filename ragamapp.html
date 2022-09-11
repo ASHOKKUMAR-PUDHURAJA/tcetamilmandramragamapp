@@ -1,0 +1,169 @@
+<html>
+    <head><title>TCE-தமிழ் மன்றம்</title>
+    <style>
+        body
+        {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #logo
+            {
+                margin-left:8%;
+                top:3%;
+                width: 100px;
+                height:100px;
+                float:left;
+            }
+            h1
+            {
+                text-align: center;
+                font-size: 200%;
+                color:indigo;
+                font-weight: bolder;
+            }
+            h4
+            {
+                text-align:center;
+                font-size: 15px;
+                color:red;
+            }
+            h3
+            {
+                text-align:center;
+                font-size: 15px;
+                font-weight: bolder;
+            }
+            .tab 
+            {
+            overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 100%;
+  background-color: brown;
+  border-radius: 10px;
+}
+.tab button,button {
+    border-radius: 10px;
+  background-color: brown;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color:yellow
+}
+.tab button:hover,button {
+  background-color:chocolate;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+#welcome
+{
+    color:darkblue;
+
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+input[type=number]{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 10px;
+  
+}
+label
+{
+    font-weight: bolder;
+  border-radius: 10px;
+  text-align: center;
+  color:navy;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#input {
+  border-radius: 5px;
+  background-color:transparent;
+  padding: 20px;
+  width:30%;
+  height:40%;
+  
+}
+
+
+    </style>
+    </head>
+
+    <body id="body1"> 
+        <div id="header">
+            <img src="tcelogo.png" id="logo">
+            <h1>தியாகராஜர் பொறியியல் கல்லூரி </h1>
+            <h4>திருப்பரங்குன்றம் , மதுரை 625 015</h4>
+            </hr>
+            <button onclick="play1();return false">LIVE EFFECTS</button>
+        </div>
+           <p id="audiofile"></p>
+        <!-- <audio id="myAudio" src="bgm.mp3" controls>
+                  
+                    Your browser does not support the audio element.
+                  </audio> -->
+
+        <div class="tab">
+            <button >மன்ற உறுப்பினர்கள்</button>
+            <button >வரலாறு</button>
+            <button >முகப்பு</button>
+          </div>
+          
+        <div id="main">
+            <marquee><p id="welcome"><i>நமது தமிழ் மன்ற ராக பந்தங்கள் வலையகத்திற்கு தங்களை அன்புடன் வரவேற்கிறோம் <span>&#128591; &#128591; &#128591;</span> </i></p> </marquee>
+            <h1 id="tamil">தமிழ் மன்றம்</h1>
+            <div id="input">
+                <label>கீழே உள்ள உறைப்பெட்டியில் சரியான ராக எண்ணை உள்ளிடவும்</label>
+
+            <input type="number" id="ragamyen" placeholder="ராக எண் (1....11,000...) ">
+          
+            <input type="submit" value="சமர்ப்பிக்க">
+            </div>
+            <div id="output">
+
+            </div>
+            <h3>Developed by ASHOKKUMAR PUDHURAJA</h3>
+        </div>
+        <script>
+          function play1()
+           {
+                 document.getElementById("body1").style.backgroundImage = "url(bgimg1.gif)";
+                 var audio = new Audio('bgm.mp3');
+                 audio.play();
+                 audio.loop=true;
+            }
+           
+            </script>
+           
+    </body>
+</html>
